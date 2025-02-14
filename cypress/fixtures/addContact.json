@@ -1,0 +1,13 @@
+{
+    "firstName": "Selma",
+    "lastName": "Habota",
+    "birth": "2000-02-02",
+    "email": "selma1.habota@email.com",
+    "phone": "011222333",
+    "address1": "Test1",
+    "address2": "Test2",
+    "city": "Sarajevo",
+    "stateOfProvince": "KS",
+    "postalCode":"71000",
+    "country":"BiH"
+}

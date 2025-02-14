@@ -1,0 +1,25 @@
+{
+    "allEmptyFields":{
+        "error": "Incorrect username or password"
+    },
+    "passwordEmpty":
+    {
+        "email": "test@email.com",
+        "error": "Incorrect username or password" 
+    },
+    "emailEmpty":
+    {
+        "password": "test",
+        "error": "Incorrect username or password" 
+    },
+    "invalidEmail":{
+        "email": "test",
+        "password": "test",
+        "error": "Incorrect username or password" 
+    },
+    "wrongPassword":{
+        "email": "test",
+        "password": "test",
+        "error": "Incorrect username or password" 
+    }
+}

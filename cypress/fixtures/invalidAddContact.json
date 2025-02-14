@@ -1,0 +1,78 @@
+{
+    "invalidBirthDate":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "birth": "1",
+        "error": "Contact validation failed: birthdate: Birthdate is invalid"
+    },
+    "invalidEmail":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "email": "Test",
+        "error": "Contact validation failed: email: Email is invalid"
+    },
+    
+    "invalidPhone":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "phone": "1",
+        "error": "Contact validation failed: phone: Phone number is invalid"
+    },
+
+    "toLongPhoneNumber":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "phone": "1234567891234567",
+        "error": "is longer than the maximum allowed length (15)."
+    },
+
+    "toLongEmail":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@email.com",
+        "error": "Contact validation failed: email: Email is invalid"
+    },
+
+    "toLongAddress1":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "address1": "This address is too long for street address 1",
+        "error": "is longer than the maximum allowed length (40)."
+    },
+
+    "toLongAddress2":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "address2": "This address is too long for street address 2",
+        "error": "is longer than the maximum allowed length (40)."
+    },
+
+    "toLongCity":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "city": "This city name is too long for city name......",
+        "error": "is longer than the maximum allowed length (40)."
+    },
+
+    "toLongState":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "stateOfProvince": "This state of province name is too long",
+        "error": "is longer than the maximum allowed length (20)."
+    },
+    
+    "invalidPostalCode":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "postalCode": "a",
+        "error": "Contact validation failed: postalCode: Postal code is invalid"
+    },
+
+    "toLongCountry":{
+        "firstName": "Selma",
+        "lastName": "Habota",
+        "country": "This country name is too long for country name",
+        "error": "is longer than the maximum allowed length (40)."
+    }
+    
+}

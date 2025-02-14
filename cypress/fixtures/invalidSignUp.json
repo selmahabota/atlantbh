@@ -1,0 +1,73 @@
+{
+    "allEmptyFields":{
+        "error": "User validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required., email: Email is invalid, password: Path `password` is required."
+    },
+    "firstNameEmpty":
+    {
+        "lastName": "Test",
+        "email": "test@email.com",
+        "password": "123456789",
+        "error": "User validation failed: firstName: Path `firstName` is required." 
+    },
+    "lastNameEmpty":
+    {
+        "firstName": "Test",
+        "email": "test@email.com",
+        "password": "123456789",
+        "error": "User validation failed: lastName: Path `lastName` is required." 
+    },
+    "emailEmpty":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "password": "123456789",
+        "error": "User validation failed: email: Email is invalid" 
+    },
+    "passwordEmpty":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "test@email.com",
+        "error": "User validation failed: password: Path `password` is required." 
+    },
+    "invalidEmail":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "Test",
+        "password": "123456789",
+        "error": "User validation failed: email: Email is invalid" 
+    },
+    "firstNameIsTOLong":{
+        "firstName": "This name is to long for this field",
+        "lastName": "Test",
+        "email": "test@email.com",
+        "password": "123456789",
+        "error": "is longer than the maximum allowed length (20)." 
+    },
+    "LastNameIsTOLong":{
+        "firstName": "Test",
+        "lastName": "This name is to long for this field",
+        "email": "test@email.com",
+        "password": "123456789",
+        "error": "is longer than the maximum allowed length (20)." 
+    },
+    "emailIsToLong":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@email.com",
+        "password": "123456789",
+        "error": "User validation failed: email: Email is invalid"
+    },
+    "paswordIsToShort":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "test@email.com",
+        "password": "1",
+        "error": "is shorter than the minimum allowed length (7)." 
+    },
+    "passwordIsToLong":{
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "test@email.com",
+        "password": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+        "error": "is longer than the maximum allowed length (100)." 
+    }
+}
