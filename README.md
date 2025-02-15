@@ -25,20 +25,52 @@ This application provides an easy way to manage contacts. Users can:
     ```bash
     npx cypress open
     ```
+2. To run smoke tests in Headless mode using Electron browser:
+    ```bash
+    npm run runSmokeTestsHeadlessElectron
+    ```
+3. To run smoke tests in Headed mode using Electron browser:
+    ```bash
+    npm run runSmokeTestsHeadedElectron
+    ```
+4. To run smoke tests in Headless mode using Chrome browser:
+    ```bash
+    npm run runSmokeTestsHeadlessChrome
+    ```
+5. To run smoke tests in Headed mode using Chrome browser:
+    ```bash
+    npm run runSmokeTestsHeadedChrome
+    ```
+6. To run regression tests in Headless mode using Electron browser:
+    ```bash
+    npm run runRegressionTestsHeadlessElectron
+    ```
+7. To run regression tests in Headed mode using Electron browser:
+    ```bash
+    npm run runRegressionTestsHeadedElectron
+    ```
+8. To run regression tests in Headless mode using Chrome browser:
+    ```bash
+    npm run runRegressionTestsHeadlessChrome
+    ```
+9. To run regression tests in Headed mode using Chrome browser:
+    ```bash
+    npm run runRegressionTestsHeadedChrome
+    ```
 
-2. To run all tests in Headless mode using Electron browser:
+10. To run all tests in Headless mode using Electron browser:
     ```bash
     npm run runAllTestsHeadlessElectron
     ```
-3. To run all tests in Headed mode using Electron browser:
+11. To run all tests in Headed mode using Electron browser:
     ```bash
     npm run runAllTestsHeadedElectron
     ```
-4. To run all tests in Headless mode using Chrome browser:
+12. To run all tests in Headless mode using Chrome browser:
     ```bash
     npm run runAllTestsHeadlessChrome
     ```
-5. To run all tests in Headed mode using Chrome browser:
+13. To run all tests in Headed mode using Chrome browser:
     ```bash
     npm run runAllTestsHeadedChrome
     ```
