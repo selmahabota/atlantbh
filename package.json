@@ -5,10 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "runAllTestsHeadedElectron": "cypress run --headed --browser electron --spec 'cypress/e2e/*'",
-    "runAllTestsHeadlessElectron": "cypress run --headless --browser electron --spec 'cypress/e2e/*'",
-    "runAllTestsHeadedChrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/*'",
-    "runAllTestsHeadlessChrome": "cypress run --headless --browser chrome --spec 'cypress/e2e/*'"
+    "runSmokeTestsHeadedElectron": "cypress run --headed --browser electron --spec 'cypress/e2e/smokeTests/*'",
+    "runSmokeTestsHeadlessElectron": "cypress run --headless --browser electron --spec 'cypress/e2e/smokeTests/*'",
+    "runSmokeTestsHeadedChrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/smokeTests/*'",
+    "runSmokeTestsHeadlessChrome": "cypress run --headless --browser chrome --spec 'cypress/e2e/smokeTests/*'",
+    "runRegressionTestsHeadedElectron": "cypress run --headed --browser electron --spec 'cypress/e2e/regressionTests/*'",
+    "runRegressionTestsHeadlessElectron": "cypress run --headless --browser electron --spec 'cypress/e2e/regressionTests/*'",
+    "runRegressionTestsHeadedChrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/regressionTests/*'",
+    "runRegressionTestsHeadlessChrome": "cypress run --headless --browser chrome --spec 'cypress/e2e/regressionTests/*'",
+    "runAllTestsHeadedElectron": "cypress run --headed --browser electron --spec 'cypress/e2e/**/*.spec.js'",
+    "runAllTestsHeadlessElectron": "cypress run --headless --browser electron --spec 'cypress/e2e/**/*.spec.js'",
+    "runAllTestsHeadedChrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/**/*.spec.js'",
+    "runAllTestsHeadlessChrome": "cypress run --headless --browser chrome --spec 'cypress/e2e/**/*.spec.js'"
   },
   "keywords": [],
   "author": "",

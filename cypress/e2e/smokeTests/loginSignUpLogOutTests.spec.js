@@ -1,4 +1,4 @@
-import { homePage } from "../support/pageObject/homePage";
+import { homePage } from "../../support/pageObject/homePage";
 const { faker } = require('@faker-js/faker');
 
 beforeEach(()=>{

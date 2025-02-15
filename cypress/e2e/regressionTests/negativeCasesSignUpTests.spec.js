@@ -1,4 +1,4 @@
-import { homePage } from "../support/pageObject/homePage";
+import { homePage } from "../../support/pageObject/homePage";
 
 beforeEach(()=>{
     cy.OpenPage()

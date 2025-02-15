@@ -1,4 +1,4 @@
-import { contactListPage } from "../support/pageObject/contactListPage";
+import { contactListPage } from "../../support/pageObject/contactListPage";
 
 beforeEach(()=>{
     cy.OpenPage()
