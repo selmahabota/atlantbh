@@ -11,10 +11,8 @@ This application provides an easy way to manage contacts. Users can:
 ```bash
     git clone https://github.com/selmahabota/atlantbh.git
 ```
-2. Navigate to the project directory:
-```bash
-    cd atlantbh
-```
+2. Open terminal inside project folder
+
 3. Install cypress using command:
 ```bash
     npm install cypress --save-dev
