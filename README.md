@@ -38,7 +38,7 @@ This application provides an easy way to manage contacts. Users can:
     ```bash
     npm run runAllTestsHeadlessChrome
     ```
-5. To run all tests in Headed mode using Electron browser:
+5. To run all tests in Headed mode using Chrome browser:
     ```bash
     npm run runAllTestsHeadedChrome
     ```
