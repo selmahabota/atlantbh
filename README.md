@@ -26,19 +26,19 @@ This application provides an easy way to manage contacts. Users can:
     npx cypress open
     ```
 
-2. To run all tests in headless mode using Electron browser:
+2. To run all tests in Headless mode using Electron browser:
     ```bash
     npm run runAllTestsHeadlessElectron
     ```
-3. To run all tests in headed mode using Electron browser:
+3. To run all tests in Headed mode using Electron browser:
     ```bash
     npm run runAllTestsHeadedElectron
     ```
-4. To run all tests in headless mode using Chrome browser:
+4. To run all tests in Headless mode using Chrome browser:
     ```bash
     npm run runAllTestsHeadlessChrome
     ```
-5. To run all tests in headed mode using Electron browser:
+5. To run all tests in Headed mode using Electron browser:
     ```bash
     npm run runAllTestsHeadedChrome
     ```
