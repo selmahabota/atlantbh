@@ -6,6 +6,8 @@ This application provides an easy way to manage contacts. Users can:
 * Log Out when they are done using the app
 * Add new contacts to their personal contact list
 
+This project includes both **UI** and **API** testing to ensure functionality across the application.
+
 ### Installation
 1. Clone the repository:
 ```bash
