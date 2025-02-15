@@ -80,7 +80,9 @@ This project includes both **UI** and **API** testing to ensure functionality ac
 ### UI Tests:
 - End-to-end testing for the user interface using **Cypress**.
 - Tests ensure that the user can interact with various elements of the application (buttons, forms, etc.), and validates that expected behavior occurs.
+- The tests are executed across multiple browsers to ensure consistent user experience and cross-browser compatibility.
 
 ### API Tests:
 - **API** tests are implemented using **Cypress** to test the backend services.
 - Various endpoints are validated to ensure correct HTTP status codes, request-response data structure, and proper API behavior.
+- These tests are also performed in different browsers to verify that the API responses remain consistent and function as expected across platforms.
