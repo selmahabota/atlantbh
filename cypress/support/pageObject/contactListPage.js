@@ -9,7 +9,12 @@ export class ContactListPage{
             header_contact_list:() => cy.contains('Contact List'),
             add_contact_button:() => cy.get('#add-contact'),
             logout_button:() => cy.get('#logout'),
-            contact_table:() => cy.get('.contactTableBodyRow')
+            contact_table:() => cy.get('.contactTableBodyRow'),
+            contact_table_first_row:() => cy.get('.contactTableBodyRow').find('td').eq(1),
+            delete_button:() => cy.get('#delete'),
+            edit_button:() => cy.get('#edit-contact'),
+            phone_number:() => cy.get('#phone'),
+            return_button:() => cy.get('#return')
         },
         addContact:{
             date_of_birth:() => cy.get('#birthdate'),
@@ -51,6 +56,37 @@ export class ContactListPage{
                     cy.get('td').eq(2).should('have.text', contact.birth)
                     cy.get('td').eq(3).should('have.text', contact.email)
                     cy.get('td').eq(4).should('have.text', contact.phone)
+                    cy.get('td').eq(5).should('have.text', contact.address1 + " " + contact.address2)
+                    cy.get('td').eq(6).should('have.text', contact.city + " " + contact.stateOfProvince + " " + contact.postalCode)
+                    cy.get('td').eq(7).should('have.text', contact.country)                    
+            })
+        })
+        
+    }
+
+    addNewContactForEdit(){
+        
+        basePage.click_on_button(this.elements.contactList.add_contact_button())
+        cy.fixture('addContactEdit').then((contact) => {
+            basePage.fill_Input_Field(homePage.elements.homePage.first_name(), contact.firstName)
+            basePage.fill_Input_Field(homePage.elements.homePage.last_name(), contact.lastName)
+            basePage.fill_Input_Field(this.elements.addContact.date_of_birth(), contact.birth)
+            basePage.fill_Input_Field(homePage.elements.homePage.email(), contact.email)
+            basePage.fill_Input_Field(this.elements.addContact.street1(), contact.address1)
+            basePage.fill_Input_Field(this.elements.addContact.street2(), contact.address2)
+            basePage.fill_Input_Field(this.elements.addContact.city(), contact.city)
+            basePage.fill_Input_Field(this.elements.addContact.stateProvince(), contact.stateOfProvince)
+            basePage.fill_Input_Field(this.elements.addContact.postalCode(), contact.postalCode)
+            basePage.fill_Input_Field(this.elements.addContact.country(), contact.country)
+            
+            basePage.click_on_button(homePage.elements.homePage.submit_button())
+
+            this.elements.contactList.contact_table().should('have.length',1)
+                .first()
+                .within(()=>{
+                    cy.get('td').eq(1).should('have.text', contact.firstName + " " + contact.lastName)
+                    cy.get('td').eq(2).should('have.text', contact.birth)
+                    cy.get('td').eq(3).should('have.text', contact.email)
                     cy.get('td').eq(5).should('have.text', contact.address1 + " " + contact.address2)
                     cy.get('td').eq(6).should('have.text', contact.city + " " + contact.stateOfProvince + " " + contact.postalCode)
                     cy.get('td').eq(7).should('have.text', contact.country)                    
@@ -231,6 +267,23 @@ export class ContactListPage{
         basePage.click_on_button(homePage.elements.homePage.cancel_button())
         this.elements.contactList.header_contact_list().should('contain','Contact List')
         this.elements.contactList.add_contact_button().should('be.visible')
+    }
+
+    deleteContact()
+    {
+        basePage.click_on_button(this.elements.contactList.contact_table_first_row())
+        basePage.click_on_button(this.elements.contactList.delete_button())
+        cy.on('window:confirm', () => true)
+    }
+
+    editContact(phone){
+        basePage.click_on_button(this.elements.contactList.contact_table_first_row())
+        basePage.click_on_button(this.elements.contactList.edit_button())
+        basePage.fill_Input_Field(this.elements.contactList.phone_number(), phone)
+        basePage.click_on_button(homePage.elements.homePage.submit_button())
+        this.elements.contactList.phone_number().should('contain', phone)
+        basePage.click_on_button(this.elements.contactList.return_button())
+        this.elements.contactList.contact_table().find('td').eq(4).should('have.text', phone)
     }
 
 }
