@@ -1,10 +1,12 @@
 # Contact List App
-This application provides an easy way to manage contacts. Users can:
+This application allows users to:
 
 * Sign In to their existing account
 * Sign Up to create a new account
 * Log Out when they are done using the app
 * Add new contacts to their personal contact list
+* Edit contact
+* Delete contact
 
 ### Installation
 1. Clone the repository:
