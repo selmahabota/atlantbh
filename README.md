@@ -74,6 +74,7 @@ This application provides an easy way to manage contacts. Users can:
     ```bash
     npm run runAllTestsHeadedChrome
     ```
+Tests include both Smoke and Regression test cases, as well as Positive and Negative test cases.
 
 This project includes both **UI** and **API** testing to ensure functionality across the application.
 
