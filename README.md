@@ -6,8 +6,6 @@ This application provides an easy way to manage contacts. Users can:
 * Log Out when they are done using the app
 * Add new contacts to their personal contact list
 
-This project includes both **UI** and **API** testing to ensure functionality across the application.
-
 ### Installation
 1. Clone the repository:
 ```bash
@@ -44,3 +42,13 @@ This project includes both **UI** and **API** testing to ensure functionality ac
     ```bash
     npm run runAllTestsHeadedChrome
     ```
+
+This project includes both **UI** and **API** testing to ensure functionality across the application.
+
+### UI Tests:
+- End-to-end testing for the user interface using **Cypress**.
+- Tests ensure that the user can interact with various elements of the application (buttons, forms, etc.), and validates that expected behavior occurs.
+
+### API Tests:
+- **API** tests are implemented using **Cypress** to test the backend services.
+- Various endpoints are validated to ensure correct HTTP status codes, request-response data structure, and proper API behavior.
