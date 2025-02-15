@@ -20,7 +20,7 @@
         "firstName": "Test",
         "lastName": "Test",
         "password": "123456789",
-        "error": "User validation failed: email: Email is invalid" 
+        "error": "User validation failed: email: Path `email` is required" 
     },
     "passwordEmpty":{
         "firstName": "Test",
@@ -54,7 +54,7 @@
         "lastName": "Test",
         "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@email.com",
         "password": "123456789",
-        "error": "User validation failed: email: Email is invalid"
+        "error": "is longer than the maximum allowed length"
     },
     "paswordIsToShort":{
         "firstName": "Test",

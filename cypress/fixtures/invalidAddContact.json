@@ -30,7 +30,7 @@
         "firstName": "Selma",
         "lastName": "Habota",
         "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@email.com",
-        "error": "Contact validation failed: email: Email is invalid"
+        "error": "is longer than the maximum allowed length"
     },
 
     "toLongAddress1":{
