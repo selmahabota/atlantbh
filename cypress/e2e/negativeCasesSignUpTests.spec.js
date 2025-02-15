@@ -31,22 +31,22 @@ describe('Invalid Signup tests',()=>{
     })
 
     it('Invalid sign up with to long first name field', ()=>{
-        homePage.signUpWithToLongFirstName()
+        homePage.signUpWithTooLongFirstName()
     })
 
     it('Invalid sign up with to long last name field', ()=>{
-        homePage.signUpWithToLongLastName()
+        homePage.signUpWithTooLongLastName()
     })
 
     it('Invalid sign up with to long email field', ()=>{
-        homePage.signUpWithToLongEmail()
+        homePage.signUpWithTooLongEmail()
     })
 
     it('Invalid sign up with to long password field', ()=>{
-        homePage.signUpWithToLongPassword()
+        homePage.signUpWithTooLongPassword()
     })
 
     it('Invalid sign up with to short password field', ()=>{
-        homePage.signUpWithToShortPassword()
+        homePage.signUpWithTooShortPassword()
     })
 })

@@ -4,7 +4,7 @@ describe('Api tests',()=>{
         const userCredentials = {
             "firstName": "Test",
             "lastName": "User",
-            "email": "testaddress@email.com",
+            "email": "testaddress1@email.com",
             "password": "myPassword"
         }
         Cypress.env('emailLogin', userCredentials.email)

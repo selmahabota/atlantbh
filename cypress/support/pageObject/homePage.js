@@ -149,7 +149,7 @@ export class HomePage{
         })
     }
 
-    signUpWithToLongFirstName(){
+    signUpWithTooLongFirstName(){
         basePage.click_on_button(this.elements.homePage.sign_up_button())
         cy.fixture('invalidSignUp').then((users) => {
             basePage.fill_Input_Field(this.elements.homePage.first_name(), users.firstNameIsTOLong.firstName)
@@ -161,7 +161,7 @@ export class HomePage{
         })
     }
 
-    signUpWithToLongLastName(){
+    signUpWithTooLongLastName(){
         basePage.click_on_button(this.elements.homePage.sign_up_button())
         cy.fixture('invalidSignUp').then((users) => {
             basePage.fill_Input_Field(this.elements.homePage.first_name(), users.LastNameIsTOLong.firstName)
@@ -173,7 +173,7 @@ export class HomePage{
         })
     }
 
-    signUpWithToLongEmail(){
+    signUpWithTooLongEmail(){
         basePage.click_on_button(this.elements.homePage.sign_up_button())
         cy.fixture('invalidSignUp').then((users) => {
             basePage.fill_Input_Field(this.elements.homePage.first_name(), users.emailIsToLong.firstName)
@@ -185,7 +185,7 @@ export class HomePage{
         })
     }
     
-    signUpWithToShortPassword(){
+    signUpWithTooShortPassword(){
         basePage.click_on_button(this.elements.homePage.sign_up_button())
         cy.fixture('invalidSignUp').then((users) => {
             basePage.fill_Input_Field(this.elements.homePage.first_name(), users.paswordIsToShort.firstName)
@@ -197,7 +197,7 @@ export class HomePage{
         })
     }
 
-    signUpWithToLongPassword(){
+    signUpWithTooLongPassword(){
         basePage.click_on_button(this.elements.homePage.sign_up_button())
         cy.fixture('invalidSignUp').then((users) => {
             basePage.fill_Input_Field(this.elements.homePage.first_name(), users.passwordIsToLong.firstName)
